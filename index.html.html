@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu aisa kaise hai</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <img src="cover.jpg" alt="Tu aisa kaise hai album cover" class="cover">
+
+    <h1>Tu aisa kaise hai</h1>
+    <p class="subtitle">Uncaptured, yet memorized.</p>
+
+    <audio id="song" src="song.mp3" preload="metadata"></audio>
+
+    <button id="playButton" aria-label="Play song">▶</button>
+    <div class="progress">
+      <span id="progressBar"></span>
+    </div>
+    <div class="time">
+      <span id="current">0:00</span>
+      <span id="duration">0:00</span>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
