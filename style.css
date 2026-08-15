@@ -71,3 +71,36 @@ button {
   font: 12px Arial, sans-serif;
   opacity: .55;
 }
+
+#intro {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  z-index: 9999;
+  animation: introFade 5s ease forwards;
+}
+
+#intro p {
+  max-width: 320px;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}
+
+@keyframes introFade {
+  0%, 75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
